@@ -4,9 +4,6 @@ import os
 from motion_detector import detect_motion
 from utils.helpers import get_timestamp, save_frame
 
-# Create the 'captured' folder if it doesn't exist
-os.makedirs("captured", exist_ok=True)
-
 # Start webcam
 cap = cv2.VideoCapture(0)
 time.sleep(2)
